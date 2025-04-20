@@ -1,0 +1,24 @@
+{
+  "name": "Playwright test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm exec playwright test",
+    "test:chromium": "pnpm exec playwright test --project chromium",
+    "test:first": "pnpm exec playwright test -g @first",
+    "test:report": "pnpm exec playwright test && npx playwright  show --report",
+    "test:ui": "pnpm exec playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0"
+  }
+}
